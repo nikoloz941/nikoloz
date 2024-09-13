@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff; /* Couleur de fond pour le header */
+    border-bottom: 2px solid #ddd; /* Optionnel : bordure en bas du header */
+}
+
+.logo {
+    max-width: 150px; /* Ajuste la taille du logo selon tes besoins */
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 2rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.separator {
+    border: none;
+    border-top: 2px solid #333;
+    width: 50%;
+    margin: 10px auto;
+}
+
+
+
+main {
+    margin-left: 270px; /* Pour éviter que le texte ne se chevauche avec la barre latérale */
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    margin: 5px 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 1.2rem;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
