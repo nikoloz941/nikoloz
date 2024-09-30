@@ -3,27 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Présentation des Métiers</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Jeu de parcours médiéval</title>
+    <link rel="stylesheet" href="tp1/style2.css">
 </head>
 <body>
-    <div class="header">
-        <img src="image/img_onisep" alt="Logo ONISEP" class="logo">
-        <h1 class="title">ONISEP</h1>
-        <hr class="separator">
+    <h1>Choisissez votre personnage</h1>
+    <div class="characters">
+        <div class="character" onclick="chooseCharacter('chevalier')">
+            <img src="chevalier.png" alt="Chevalier">
+            <p>Chevalier - Courageux et fort</p>
+        </div>
+        <div class="character" onclick="chooseCharacter('archer')">
+            <img src="archer.png" alt="Archer">
+            <p>Archer - Rapide et précis</p>
+        </div>
     </div>
 
-    <h1>Qui sommes nous ?</h1>
-    <p>L’Onisep a pour vocation d’informer sur les formations, les métiers, les secteurs professionnels. Il guide les jeunes et leur famille dans leurs choix de parcours de formation et de projet professionnel, et fournit des ressources aux équipes éducatives qui aident les jeunes dans leur démarche d’orientation</p> <br>
+    <script src="tp1/script.js"></script>
+    <label for="difficulty">Choisissez la difficulté :</label>
+<select id="difficulty" onchange="setDifficulty()">
+    <option value="1">Facile</option>
+    <option value="2">Moyen</option>
+    <option value="3">Difficile</option>
+</select>
 
-    <h2>Les métiers de l'informatique </h2>
-    <nav class="nav">
-            <ul>
-                <li><a href="developpeur-front-end.html">Développeur Front-End</a></li>
-                <li><a href="developpeur-mobile.html">Développeur Mobile</a></li>
-                <li><a href="developpeur-back-end.html">Développeur Back-End</a></li>
-                <li><a href="developpeur-full-stack.html">Développeur Full-Stack</a></li>
-            </ul>
-        </nav>
+<script>
+function setDifficulty() {
+    const select = document.getElementById('difficulty');
+    difficultyLevel = parseInt(select.value);
+    setupGameDifficulty();  // Reconfigurer le jeu en fonction de la nouvelle difficulté
+}
+</script>
+
 </body>
 </html>
